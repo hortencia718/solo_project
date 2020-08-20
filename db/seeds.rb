@@ -8,8 +8,10 @@ user3 = User.create(username: "gizzy")
 # here we are create a new user and save it to variable 
 # (user1)
 
-joke1 = Joke.create(content: " Tester joke")
-joke2 = Joke.create(content: " Happy joke")
+joke1 = Joke.create(content: " Why did the clock get kicked out of the library?")
+# b/c it tocked to much
+joke2 = Joke.create(content: " Where do pencils come from?")
+    # pencil vain na
 joke3 = Joke.create(content: " What goes up")
 # create a new "joke " and save its content ""
 user_joke= UserJoke.create(user_id: user3.id, joke_id: joke2.id)

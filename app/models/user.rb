@@ -5,4 +5,4 @@ class User < ActiveRecord::Base
   # add a ssociatons!
 end
 
-# User -< UserJoke >- Joke
+
