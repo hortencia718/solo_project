@@ -4,5 +4,3 @@ class User < ActiveRecord::Base
   # belongs_to :age
   # add a ssociatons!
 end
-
-

@@ -4,15 +4,19 @@ Joke.destroy_all
 user1 = User.create(username: "mazzy")
 user2 = User.create(username: "fuzzy")
 user3 = User.create(username: "gizzy")
+user4 = User.create(username: "wizzy")
 
 # here we are create a new user and save it to variable 
 # (user1)
 
 joke1 = Joke.create(content: " Why did the clock get kicked out of the library?")
 # b/c it tocked to much
-joke2 = Joke.create(content: " Where do pencils come from?")
-    # pencil vain na
-joke3 = Joke.create(content: " What goes up")
+joke2 = Joke.create(content: " what button is impossible to unbutton?")
+    # the belly button
+joke3 = Joke.create(content: " how do you get a squirrel to like you? act like a nut ")
+# act like a nut 
+joke4 = Joke.create(content: "what did the traffic light say to the car")
+# "dont look! 'i'm about to change"
 # create a new "joke " and save its content ""
 user_joke= UserJoke.create(user_id: user3.id, joke_id: joke2.id)
 user_joke= UserJoke.create(user_id: user2.id, joke_id: joke2.id)
