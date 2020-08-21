@@ -59,3 +59,17 @@ User -< UserJoke >- Joke
 - [Adding ASCII Art to your CLI by Sylwia Vargas](https://medium.com/@sylwiavargas/adding-pictures-to-your-ruby-cli-4252b89823a)
 - [Using Time/Date in your CLI by Joel Mendoza](https://medium.com/@joelmendza173/ruby-date-time-for-dummies-9f45518bab64)
 - [Resetting your database indexes by Sylwia Vargas]()
+
+
+"Readme"
+- Create a new User 
+- Sign-in as an exiting user 
+- give the user an option to login and or signup for jokes 
+- give the user logging in a "free joke of the day" clean friendly joke something 
+  you would be able to tell a (7-12)
+- user will get a random joke of the day even if user doesn't want a joke (all jokes are family friendly)
+
+* if i had more time 
+-would allow the user to have a data base of jokes that belong to them
+- would have the user delete from their data base a joke they no longer need or want 
+- add some color and some sounds effects visual 
