@@ -18,6 +18,10 @@ joke2 = Joke.create(content: " what button is impossible to unbutton? the belly 
 joke3 = Joke.create(content: " how do you get a squirrel to like you? act like a nut ")
 
 joke4 = Joke.create(content: "what did the traffic light say to the car dont look i'm about to change")
+
+joke5 = Joke.create(content: "What did the left eye say to the right eye? Between us, something smells!")
+
+
 # "dont look! 'i'm about to change"
 # create a new "joke " and save its content ""
 
