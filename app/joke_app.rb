@@ -10,8 +10,8 @@ end
  def run
        welcome
      login_or_signup
-     wanna_see_the_joke_of_day?
-    # get_joke(what_subject)
+    #  wanna_see_the_joke_of_day?
+    #  get_joke(what_subject)
  end
 
 
@@ -19,7 +19,15 @@ end
     choice = @prompt.select("Do wanna see the joke of the day?", %w(yes no))
        if choice == "yes" 
         wanna_see_the_joke_of_day?
+        sleep 1
+        puts "Bye,see you tomorrow"
        else 
+        puts "Sorry you are going to get a joke anyway!"
+        sleep 2
+        puts  Joke.all.sample.content
+        sleep 1
+        puts "BYE BYE"
+
        end
   end
   #  i want this method to welsome the user
@@ -36,7 +44,7 @@ end
 
     def login_or_signup
       choice = @prompt.select("Do wanna login?, do wanna signup for jokes?", %w(login signup))
-     if choice == "login" 
+    #  if choice == "login" 
        puts "Welcome"
        sleep 1
        puts "What's your user name"
@@ -44,13 +52,27 @@ end
        @user = User.find_or_create_by(username: answer)
        sleep 1
        puts "hello, #{@user.username}!"
-      end
+       puts  Joke.all.sample.content
+    #  else 
+      # puts "Welcome"
+      # sleep 1
+      # puts "What's your user name"
+      # answer = gets.chomp
+      # @user = User.find_or_create_by(username: answer)
+      # sleep 1
+      #  puts "hello, #{@user.username}!"
+      #  puts  Joke.all.sample.content
+      # end
+      main_menu
     end 
   
    def  wanna_see_the_joke_of_day?
-     Joke.all.sample.content
+    puts Joke.all.sample.content
   end
 
+
+  # def  get_joke(what_subject)
+  # end
 
 end
 
