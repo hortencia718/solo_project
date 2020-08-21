@@ -47,7 +47,7 @@ end
       end
     end 
   
-  def  wanna_see_the_joke_of_day?
+   def  wanna_see_the_joke_of_day?
      Joke.all.sample.content
   end
 
